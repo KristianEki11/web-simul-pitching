@@ -65,22 +65,41 @@ body.light-theme .nav-link:hover {
   color: var(--text-primary);
 }
 
-/* Theme Toggle Button Styles */
+/* Floating Theme Toggle Button Styles */
 .theme-toggle {
-  background: none;
-  border: none;
-  color: var(--text-secondary);
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-  border-radius: var(--radius-md);
-  transition: all 0.3s ease;
-  margin-right: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .theme-toggle:hover {
-  color: var(--text-primary);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   background: var(--bg-hover);
+}
+
+.theme-toggle:active {
+  transform: translateY(-1px) scale(0.96);
+}
+
+body.light-theme .theme-toggle {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+body.light-theme .theme-toggle:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
