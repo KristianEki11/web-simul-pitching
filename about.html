@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
 
@@ -31,6 +32,7 @@
         <li><a href="program.html" class="nav-link">Program</a></li>
         <li><a href="about.html" class="nav-link active">Company Profile</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle Theme"><i data-lucide="sun"></i></button>
       <a href="#" class="nav-cta"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
       <button class="hamburger" aria-label="Menu"><i data-lucide="menu"></i></button>
     </div>
@@ -41,7 +43,10 @@
   <div class="mobile-menu">
     <div class="mobile-menu-header">
       <span class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></span>
-      <button class="mobile-close" aria-label="Close menu"><i data-lucide="x"></i></button>
+      <div style="display: flex; align-items: center;">
+        <button class="theme-toggle" aria-label="Toggle Theme"><i data-lucide="sun"></i></button>
+        <button class="mobile-close" aria-label="Close menu"><i data-lucide="x"></i></button>
+      </div>
     </div>
     <a href="index.html" class="nav-link">Home</a>
     <a href="stream.html" class="nav-link"><span class="live-dot"></span> Stream</a>
@@ -300,4 +305,5 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
 
