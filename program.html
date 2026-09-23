@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program — MMTC Media</title>
+  
+  <!-- Google Fonts: Montserrat + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Shared Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="stream.html" class="nav-link">Stream</a></li>
+        <li><a href="news.html" class="nav-link">News</a></li>
+        <li><a href="program.html" class="nav-link active">Program</a></li>
+        <li><a href="about.html" class="nav-link">Company Profile</a></li>
+      </ul>
+      <a href="#" class="nav-cta"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
+      <button class="hamburger" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></span>
+      <button class="mobile-close" aria-label="Close menu"><i data-lucide="x"></i></button>
+    </div>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="stream.html" class="nav-link"><span class="live-dot"></span> Stream</a>
+    <a href="news.html" class="nav-link">News</a>
+    <a href="program.html" class="nav-link active">Program</a>
+    <a href="about.html" class="nav-link">Company Profile</a>
+    <div class="mobile-menu-footer">
+      <a href="#" class="btn btn-primary" style="width:100%;text-align:center;"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
+      <div class="footer-social" style="justify-content:center;margin-top:16px;">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container" style="margin-top:72px; padding-top:24px;">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator">›</span>
+      <span class="current">Program</span>
+    </nav>
+
+    <!-- Program Header Section -->
+    <div class="section-header" style="margin-bottom:32px;">
+      <h1 class="section-title">Program Kami</h1>
+      <p class="section-subtitle">Jelajahi ragam program siaran dari MMTC Media</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs" id="program-filters">
+      <button class="filter-tab active" data-category="all">Semua</button>
+      <button class="filter-tab" data-category="Berita"><i data-lucide="newspaper" class="icon"></i> Berita</button>
+      <button class="filter-tab" data-category="Musik"><i data-lucide="music" class="icon"></i> Musik</button>
+      <button class="filter-tab" data-category="Travel"><i data-lucide="compass" class="icon"></i> Travel</button>
+      <button class="filter-tab" data-category="Talkshow"><i data-lucide="mic" class="icon"></i> Talkshow</button>
+      <button class="filter-tab" data-category="Podcast"><i data-lucide="headphones" class="icon"></i> Podcast</button>
+    </div>
+
+    <!-- Program Grid -->
+    <div id="program-grid" class="grid grid-3" style="margin-bottom:80px;"></div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="nav-logo" style="margin-bottom:16px;">MMTC<span class="logo-accent">MEDIA</span></h3>
+          <p class="footer-brand">Unit produksi dan penyiaran milik Departemen Multimedia dan Jaringan Komunikasi. Mengembangkan kemampuan mahasiswa dalam dunia broadcasting.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stream.html">Stream</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="about.html">Company Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Alamat</h4>
+          <p class="footer-brand">Jl. MMTC No. XX<br>Yogyakarta, 55283<br>Indonesia</p>
+          <div class="contact-info">
+            <p><i data-lucide="phone" class="icon"></i> (0274) XXXXXX</p>
+            <p><i data-lucide="mail" class="icon"></i> media@mmtc.ac.id</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Ikuti Kami</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          </div>
+          <h4 class="footer-title" style="margin-top:24px;">Portal Angkatan</h4>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="#" class="btn btn-sm btn-secondary">Google Play</a>
+            <a href="#" class="btn btn-sm btn-secondary">App Store</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MMTC Media. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script>lucide.createIcons();</script>
+  <script src="js/main.js"></script>
+  <script>
+    let programs = [];
+
+    async function loadPrograms() {
+      try {
+        programs = typeof ALL_PROGRAMS !== 'undefined' ? ALL_PROGRAMS : [];
+        renderPrograms('all');
+        initFilters();
+      } catch(e) { console.error(e); }
+    }
+
+    function renderPrograms(category) {
+      const grid = document.getElementById('program-grid');
+      const filtered = category === 'all' ? programs : programs.filter(p => p.category === category);
+      grid.innerHTML = filtered.map(p => `
+        <a href="program-detail.html?id=${p.id}" class="card program-card" data-category="${p.category}">
+          <div style="position:relative;">
+            <img src="${p.image}" alt="${p.title}" class="card-image" style="aspect-ratio:3/4;" loading="lazy">
+            <span class="card-badge">${p.category}</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">${p.title}</h3>
+            <p class="card-text"><i data-lucide="clock" class="icon"></i> ${p.schedule}</p>
+          </div>
+        </a>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function initFilters() {
+      document.querySelectorAll('.filter-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderPrograms(btn.dataset.category);
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadPrograms);
+  </script>
+</body>
+</html>
+
+
+

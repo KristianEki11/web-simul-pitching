@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMTC Media — Suaramu, Ceritamu, Inspirasimu</title>
+  
+  <!-- Google Fonts: Montserrat + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="stream.html" class="nav-link">Stream</a></li>
+        <li><a href="news.html" class="nav-link">News</a></li>
+        <li><a href="program.html" class="nav-link">Program</a></li>
+        <li><a href="about.html" class="nav-link">Company Profile</a></li>
+      </ul>
+      <a href="#" class="nav-cta"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
+      <button class="hamburger" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></span>
+      <button class="mobile-close" aria-label="Close menu"><i data-lucide="x"></i></button>
+    </div>
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="stream.html" class="nav-link"><span class="live-dot"></span> Stream</a>
+    <a href="news.html" class="nav-link">News</a>
+    <a href="program.html" class="nav-link">Program</a>
+    <a href="about.html" class="nav-link">Company Profile</a>
+    <div class="mobile-menu-footer">
+      <a href="#" class="btn btn-primary" style="width:100%;text-align:center;"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
+      <div class="footer-social" style="justify-content:center;margin-top:16px;">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero" style="position: relative; z-index: 1;">
+    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80&fit=crop" alt="Broadcasting Studio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.95) 100%); z-index: -1;"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge badge-live hero-badge"><span class="live-dot"></span> On Air Now</span>
+        <h1 class="hero-title">MMTC MEDIA</h1>
+        <p class="hero-subtitle">Suaramu, Ceritamu, Inspirasimu — Platform broadcasting kampus terdepan yang menghadirkan berita, hiburan, dan inspirasi untuk generasi muda.</p>
+        <div class="hero-actions">
+          <a href="stream.html" class="btn btn-primary"><i data-lucide="play" class="icon"></i> Tonton Live</a>
+          <a href="about.html" class="btn btn-secondary">Selengkapnya <i data-lucide="arrow-right" class="icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Program Unggulan Section -->
+  <section class="section reveal" id="program-unggulan">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Program Unggulan</h2>
+        <p class="section-subtitle">Jelajahi ragam program siaran dari MMTC Media</p>
+      </div>
+
+      <div class="grid grid-4">
+        <!-- Program Card 1: JNews -->
+        <a href="program-detail.html?id=jnews" class="program-card">
+          <div class="program-card-poster">
+            <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80&fit=crop" alt="Poster JNews" loading="lazy">
+            <span class="badge badge-category"><i data-lucide="newspaper" class="icon"></i> Berita</span>
+          </div>
+          <div class="program-card-content">
+            <h3 class="program-card-title">JNews</h3>
+            <p class="program-card-schedule"><i data-lucide="clock" class="icon"></i> Sen-Jum 08:00</p>
+          </div>
+        </a>
+
+        <!-- Program Card 2: Pentas Udara -->
+        <a href="program-detail.html?id=pentas-udara" class="program-card">
+          <div class="program-card-poster">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80&fit=crop" alt="Poster Pentas Udara" loading="lazy">
+            <span class="badge badge-category"><i data-lucide="music" class="icon"></i> Musik</span>
+          </div>
+          <div class="program-card-content">
+            <h3 class="program-card-title">Pentas Udara</h3>
+            <p class="program-card-schedule"><i data-lucide="clock" class="icon"></i> Sab 14:00</p>
+          </div>
+        </a>
+
+        <!-- Program Card 3: EXPLORITA -->
+        <a href="program-detail.html?id=explorita" class="program-card">
+          <div class="program-card-poster">
+            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&q=80&fit=crop" alt="Poster EXPLORITA" loading="lazy">
+            <span class="badge badge-category"><i data-lucide="compass" class="icon"></i> Travel</span>
+          </div>
+          <div class="program-card-content">
+            <h3 class="program-card-title">EXPLORITA</h3>
+            <p class="program-card-schedule"><i data-lucide="clock" class="icon"></i> Sab 10:00</p>
+          </div>
+        </a>
+
+        <!-- Program Card 4: OSPEK -->
+        <a href="program-detail.html?id=ospek" class="program-card">
+          <div class="program-card-poster">
+            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80&fit=crop" alt="Poster OSPEK" loading="lazy">
+            <span class="badge badge-category"><i data-lucide="mic" class="icon"></i> Talkshow</span>
+          </div>
+          <div class="program-card-content">
+            <h3 class="program-card-title">OSPEK</h3>
+            <p class="program-card-schedule"><i data-lucide="clock" class="icon"></i> Special Event</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="section-footer text-right" style="margin-top: 28px;">
+        <a href="program.html" class="link-more">Lihat Semua <i data-lucide="arrow-right" class="icon"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Berita Terkini Section -->
+  <section class="section reveal" id="berita-terkini">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Berita Terkini</h2>
+        <p class="section-subtitle">Update terbaru dari tim redaksi MMTC Media</p>
+      </div>
+
+      <div class="grid-sidebar">
+        <!-- Left (Main): Featured Trending Card -->
+        <div class="featured-news-card">
+          <a href="news-detail.html?id=1" class="featured-news-link">
+            <div class="featured-news-image">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80&fit=crop" alt="Festival Kebudayaan Yogyakarta 2026" loading="lazy">
+              <span class="badge badge-trending"><i data-lucide="trending-up" class="icon"></i> TRENDING</span>
+            </div>
+            <div class="featured-news-content">
+              <div class="news-meta">
+                <span class="news-date"><i data-lucide="calendar" class="icon"></i> 22 September 2026</span>
+                <span class="news-author"><i data-lucide="user" class="icon"></i> Redaksi MMTC</span>
+              </div>
+              <h3 class="featured-news-title">Festival Kebudayaan Yogyakarta 2026: Memeriahkan Warisan Budaya Nusantara</h3>
+              <p class="featured-news-excerpt">
+                Perayaan seni dan kebudayaan terbesar di Yogyakarta kembali digelar tahun ini dengan menghadirkan ratusan seniman muda, pameran multimedia, dan kolaborasi lintas generasi yang memukau ribuan penonton dari berbagai penjuru tanah air.
+              </p>
+              <span class="read-more-link">Baca Selengkapnya <i data-lucide="arrow-right" class="icon"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Right (Sidebar): Berita Lainnya -->
+        <aside class="news-sidebar">
+          <h3 class="sidebar-heading">Berita Lainnya</h3>
+          <div class="sidebar-news-list">
+            <a href="news-detail.html?id=2" class="sidebar-news-item">
+              <div class="sidebar-news-thumb-wrapper">
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80&fit=crop" alt="Studio Broadcasting Digital" class="sidebar-news-thumb" loading="lazy">
+              </div>
+              <div class="sidebar-news-info">
+                <h4 class="sidebar-news-title">Peresmian Studio Broadcasting Digital MMTC Generasi Terkini</h4>
+                <span class="sidebar-news-date"><i data-lucide="calendar" class="icon"></i> 21 September 2026</span>
+              </div>
+            </a>
+
+            <a href="news-detail.html?id=3" class="sidebar-news-item">
+              <div class="sidebar-news-thumb-wrapper">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&q=80&fit=crop" alt="Prestasi Mahasiswa MMTC" class="sidebar-news-thumb" loading="lazy">
+              </div>
+              <div class="sidebar-news-info">
+                <h4 class="sidebar-news-title">Mahasiswa MMTC Raih Penghargaan Juara Nasional Film Dokumenter</h4>
+                <span class="sidebar-news-date"><i data-lucide="calendar" class="icon"></i> 19 September 2026</span>
+              </div>
+            </a>
+
+            <a href="news-detail.html?id=4" class="sidebar-news-item">
+              <div class="sidebar-news-thumb-wrapper">
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80&fit=crop" alt="Workshop Podcasting Kreatif" class="sidebar-news-thumb" loading="lazy">
+              </div>
+              <div class="sidebar-news-info">
+                <h4 class="sidebar-news-title">Workshop Creative Podcasting Bersama Praktisi Media Profesional</h4>
+                <span class="sidebar-news-date"><i data-lucide="calendar" class="icon"></i> 17 September 2026</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="sidebar-footer" style="margin-top: 20px;">
+            <a href="news.html" class="link-more">Lihat Semua Berita <i data-lucide="arrow-right" class="icon"></i></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="nav-logo" style="margin-bottom:16px;">MMTC<span class="logo-accent">MEDIA</span></h3>
+          <p class="footer-brand">Unit produksi dan penyiaran milik Departemen Multimedia dan Jaringan Komunikasi. Mengembangkan kemampuan mahasiswa dalam dunia broadcasting.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stream.html">Stream</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="about.html">Company Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Alamat</h4>
+          <p class="footer-brand">Jl. MMTC No. XX<br>Yogyakarta, 55283<br>Indonesia</p>
+          <div class="contact-info">
+            <p><i data-lucide="phone" class="icon"></i> (0274) XXXXXX</p>
+            <p><i data-lucide="mail" class="icon"></i> media@mmtc.ac.id</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Ikuti Kami</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          </div>
+          <h4 class="footer-title" style="margin-top:24px;">Portal Angkatan</h4>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="#" class="btn btn-sm btn-secondary">Google Play</a>
+            <a href="#" class="btn btn-sm btn-secondary">App Store</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MMTC Media. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <!-- Lucide Icons init -->
+  <script>lucide.createIcons();</script>
+  <!-- Data JS -->
+  <script src="js/data.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

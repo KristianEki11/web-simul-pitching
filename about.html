@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile — MMTC Media</title>
+  
+  <!-- Google Fonts: Montserrat + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="stream.html" class="nav-link">Stream</a></li>
+        <li><a href="news.html" class="nav-link">News</a></li>
+        <li><a href="program.html" class="nav-link">Program</a></li>
+        <li><a href="about.html" class="nav-link active">Company Profile</a></li>
+      </ul>
+      <a href="#" class="nav-cta"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
+      <button class="hamburger" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span class="nav-logo">MMTC<span class="logo-accent">MEDIA</span></span>
+      <button class="mobile-close" aria-label="Close menu"><i data-lucide="x"></i></button>
+    </div>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="stream.html" class="nav-link"><span class="live-dot"></span> Stream</a>
+    <a href="news.html" class="nav-link">News</a>
+    <a href="program.html" class="nav-link">Program</a>
+    <a href="about.html" class="nav-link active">Company Profile</a>
+    <div class="mobile-menu-footer">
+      <a href="#" class="btn btn-primary" style="width:100%;text-align:center;"><i data-lucide="users" class="icon"></i> Portal Angkatan</a>
+      <div class="footer-social" style="justify-content:center;margin-top:16px;">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero" style="position: relative; z-index: 1; min-height: 50vh;">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80&fit=crop" alt="Team Work" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.95) 100%); z-index: -1;"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">MMTC MEDIA</h1>
+        <p class="hero-subtitle">Media Kampus Terdepan — Menyuarakan Kreativitas Mahasiswa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tentang Kami Section -->
+  <section class="section reveal" id="tentang-kami">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tentang Kami</h2>
+      </div>
+      <div style="max-width: 920px; font-size: 16px; line-height: 1.85; color: var(--text-primary);">
+        <p style="margin-bottom: 20px;">
+          MMTC Media adalah unit produksi dan penyiaran milik Departemen Multimedia dan Jaringan Komunikasi (MMTC) yang berdedikasi untuk mengembangkan kemampuan mahasiswa dalam dunia broadcasting, jurnalistik, dan produksi konten kreatif.
+        </p>
+        <p>
+          Didirikan pada tahun 2021, MMTC Media telah menjadi wadah bagi mahasiswa untuk mengasah kemampuan di bidang penyiaran radio, produksi video, podcasting, dan jurnalisme digital. Dengan fasilitas studio berstandar profesional dan tim yang passionate, kami terus menghadirkan konten berkualitas untuk komunitas kampus dan masyarakat luas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi & Misi Section -->
+  <section class="section reveal" id="visi-misi">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Visi &amp; Misi</h2>
+      </div>
+      <div class="visi-misi">
+        <!-- Visi Card -->
+        <div class="visi-card">
+          <i data-lucide="eye" class="icon visi-misi-icon"></i>
+          <h3 class="visi-misi-title">Visi</h3>
+          <p style="color: var(--text-muted); line-height: 1.7; font-size: 15px;">
+            Menjadi media kampus yang inovatif, edukatif, dan inspiratif dalam mengembangkan potensi mahasiswa di bidang broadcasting dan komunikasi digital.
+          </p>
+        </div>
+
+        <!-- Misi Card -->
+        <div class="misi-card">
+          <i data-lucide="target" class="icon visi-misi-icon"></i>
+          <h3 class="visi-misi-title">Misi</h3>
+          <ul class="misi-list" style="list-style: none; padding-left: 0;">
+            <li style="display: flex; gap: 8px; margin-bottom: 8px;"><i data-lucide="chevron-right" class="icon" style="flex-shrink: 0; margin-top: 4px;"></i> <span>Menyediakan platform belajar broadcasting yang profesional dan inklusif bagi seluruh mahasiswa.</span></li>
+            <li style="display: flex; gap: 8px; margin-bottom: 8px;"><i data-lucide="chevron-right" class="icon" style="flex-shrink: 0; margin-top: 4px;"></i> <span>Menghasilkan konten kreatif berkualitas tinggi yang edukatif, informatif, dan menghibur.</span></li>
+            <li style="display: flex; gap: 8px; margin-bottom: 8px;"><i data-lucide="chevron-right" class="icon" style="flex-shrink: 0; margin-top: 4px;"></i> <span>Membangun jaringan kolaborasi dengan media kampus dan industri media profesional.</span></li>
+            <li style="display: flex; gap: 8px; margin-bottom: 8px;"><i data-lucide="chevron-right" class="icon" style="flex-shrink: 0; margin-top: 4px;"></i> <span>Mendorong inovasi dalam pemanfaatan teknologi digital untuk produksi dan distribusi konten.</span></li>
+            <li style="display: flex; gap: 8px;"><i data-lucide="chevron-right" class="icon" style="flex-shrink: 0; margin-top: 4px;"></i> <span>Membentuk generasi broadcaster muda yang kompeten, beretika, dan berdaya saing global.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Organisasi Section -->
+  <section class="section reveal" id="struktur-organisasi">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Struktur Organisasi</h2>
+        <p class="section-subtitle">Susunan kepemimpinan dan manajemen operasional MMTC Media</p>
+      </div>
+      
+      <!-- Organization Chart -->
+      <div class="org-chart">
+        <!-- Top Node: Ketua Umum -->
+        <div class="org-root">
+          <div class="org-card">
+            <div class="org-title">Ketua Umum</div>
+            <div class="org-name">Fajar Nugroho</div>
+          </div>
+          <div class="org-line-vertical"></div>
+        </div>
+
+        <!-- Branching Lines and Children Nodes -->
+        <div class="org-branch-wrap">
+          <div class="org-branch-line"></div>
+          <div class="org-children">
+            <!-- Divisi Produksi -->
+            <div class="org-child">
+              <div class="org-line-vertical"></div>
+              <div class="org-card">
+                <div class="org-title">Divisi Produksi</div>
+                <div class="org-name">Dimas Arya</div>
+              </div>
+            </div>
+
+            <!-- Divisi Redaksi -->
+            <div class="org-child">
+              <div class="org-line-vertical"></div>
+              <div class="org-card">
+                <div class="org-title">Divisi Redaksi</div>
+                <div class="org-name">Rina Amelia</div>
+              </div>
+            </div>
+
+            <!-- Divisi Teknik -->
+            <div class="org-child">
+              <div class="org-line-vertical"></div>
+              <div class="org-card">
+                <div class="org-title">Divisi Teknik</div>
+                <div class="org-name">Bagus Pratama</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Crew Section -->
+  <section class="section reveal" id="all-crew">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">All Crew MMTC Media</h2>
+        <p class="section-subtitle">Talenta kreatif dan insan broadcaster di balik setiap tayangan kami</p>
+      </div>
+      
+      <!-- Full-width Group Photo -->
+      <div style="margin-bottom: 40px;">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80&fit=crop" alt="All Crew MMTC Media" style="width: 100%; border-radius: var(--radius-lg); display: block;" loading="lazy">
+      </div>
+
+      <!-- Crew Grid -->
+      <div class="crew-grid">
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80&fit=crop&crop=face" alt="Fajar Nugroho" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Fajar Nugroho</h3>
+          <p class="crew-role">Ketua Umum</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80&fit=crop&crop=face" alt="Rina Amelia" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Rina Amelia</h3>
+          <p class="crew-role">Head of Redaksi</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80&fit=crop&crop=face" alt="Dimas Arya" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Dimas Arya</h3>
+          <p class="crew-role">Head of Produksi</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80&fit=crop&crop=face" alt="Bagus Pratama" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Bagus Pratama</h3>
+          <p class="crew-role">Head of Teknik</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80&fit=crop&crop=face" alt="Anisa Rahma" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Anisa Rahma</h3>
+          <p class="crew-role">Reporter</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80&fit=crop&crop=face" alt="Sari Dewi" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Sari Dewi</h3>
+          <p class="crew-role">Presenter</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80&fit=crop&crop=face" alt="Maya Sari" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Maya Sari</h3>
+          <p class="crew-role">Podcaster</p>
+        </div>
+
+        <div class="crew-card">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80&fit=crop&crop=face" alt="Lestari Putri" class="crew-avatar" loading="lazy">
+          <h3 class="crew-name">Lestari Putri</h3>
+          <p class="crew-role">Editor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="nav-logo" style="margin-bottom:16px;">MMTC<span class="logo-accent">MEDIA</span></h3>
+          <p class="footer-brand">Unit produksi dan penyiaran milik Departemen Multimedia dan Jaringan Komunikasi. Mengembangkan kemampuan mahasiswa dalam dunia broadcasting.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stream.html">Stream</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="about.html">Company Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Alamat</h4>
+          <p class="footer-brand">Jl. MMTC No. XX<br>Yogyakarta, 55283<br>Indonesia</p>
+          <div class="contact-info">
+            <p><i data-lucide="phone" class="icon"></i> (0274) XXXXXX</p>
+            <p><i data-lucide="mail" class="icon"></i> media@mmtc.ac.id</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Ikuti Kami</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          </div>
+          <h4 class="footer-title" style="margin-top:24px;">Portal Angkatan</h4>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="#" class="btn btn-sm btn-secondary">Google Play</a>
+            <a href="#" class="btn btn-sm btn-secondary">App Store</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MMTC Media. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <!-- Lucide Icons init -->
+  <script>lucide.createIcons();</script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

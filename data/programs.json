@@ -1,0 +1,78 @@
+[
+  {
+    "id": "jnews",
+    "title": "JNews",
+    "category": "Berita",
+    "categoryLucide": "newspaper",
+    "schedule": "Senin - Jumat, 08:00 WIB",
+    "description": "Program berita harian yang mengupas isu-isu terkini di lingkungan kampus dan sekitarnya. JNews hadir dengan sajian informasi aktual, terpercaya, dan relevan untuk mahasiswa.",
+    "hosts": ["Rina Amelia", "Bagus Pratama"],
+    "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=600&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80&fit=crop",
+    "episodes": [
+      {"ep": 142, "title": "Registrasi Semester Ganjil 2026", "date": "23 Sep 2026", "videoId": "dQw4w9WgXcQ"},
+      {"ep": 141, "title": "Wisuda Periode September", "date": "22 Sep 2026", "videoId": "dQw4w9WgXcQ"},
+      {"ep": 140, "title": "Festival Seni Kampus", "date": "21 Sep 2026", "videoId": "dQw4w9WgXcQ"},
+      {"ep": 139, "title": "Seminar Teknologi AI", "date": "20 Sep 2026", "videoId": "dQw4w9WgXcQ"}
+    ]
+  },
+  {
+    "id": "pentas-udara",
+    "title": "Pentas Udara",
+    "category": "Musik",
+    "categoryLucide": "music",
+    "schedule": "Sabtu, 14:00 WIB",
+    "description": "Pentas Udara adalah program musik interaktif yang menghadirkan penampilan live dari musisi lokal dan band kampus. Nikmati alunan musik segar setiap akhir pekan.",
+    "hosts": ["Dimas Arya", "Sari Dewi"],
+    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80&fit=crop",
+    "episodes": [
+      {"ep": 56, "title": "Live Session: Indie Folk Night", "date": "20 Sep 2026", "videoId": "dQw4w9WgXcQ"},
+      {"ep": 55, "title": "Akustik Sore: Band Kampus", "date": "13 Sep 2026", "videoId": "dQw4w9WgXcQ"}
+    ]
+  },
+  {
+    "id": "explorita",
+    "title": "EXPLORITA",
+    "category": "Travel",
+    "categoryLucide": "compass",
+    "schedule": "Sabtu, 10:00 WIB",
+    "description": "EXPLORITA mengajak pemirsa menjelajahi destinasi wisata menarik di sekitar Yogyakarta dan Indonesia. Temukan hidden gems dan cerita di balik setiap tempat.",
+    "hosts": ["Anisa Rahma"],
+    "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&q=80&fit=crop",
+    "episodes": [
+      {"ep": 32, "title": "Pantai Selatan Yogyakarta", "date": "20 Sep 2026", "videoId": "dQw4w9WgXcQ"},
+      {"ep": 31, "title": "Candi Prambanan di Malam Hari", "date": "13 Sep 2026", "videoId": "dQw4w9WgXcQ"}
+    ]
+  },
+  {
+    "id": "ospek",
+    "title": "OSPEK",
+    "category": "Talkshow",
+    "categoryLucide": "mic",
+    "schedule": "Special Event",
+    "description": "OSPEK (Obrolan Seru, Penuh Edukasi dan Kreativitas) adalah talkshow yang membahas topik-topik hangat di kalangan mahasiswa, dari karir hingga isu sosial.",
+    "hosts": ["Fajar Nugroho", "Lestari Putri"],
+    "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80&fit=crop",
+    "episodes": [
+      {"ep": 18, "title": "Karir di Industri Kreatif", "date": "15 Sep 2026", "videoId": "dQw4w9WgXcQ"}
+    ]
+  },
+  {
+    "id": "dengar-dulu",
+    "title": "Dengar Dulu",
+    "category": "Podcast",
+    "categoryLucide": "headphones",
+    "schedule": "Minggu, 20:00 WIB",
+    "description": "Dengar Dulu adalah podcast mingguan yang mengangkat cerita-cerita inspiratif dari mahasiswa, alumni, dan tokoh-tokoh yang berpengaruh di dunia pendidikan.",
+    "hosts": ["Maya Sari"],
+    "image": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&q=80&fit=crop",
+    "episodes": [
+      {"ep": 45, "title": "Dari Kampus ke Silicon Valley", "date": "21 Sep 2026", "videoId": "dQw4w9WgXcQ"},
+      {"ep": 44, "title": "Mental Health untuk Mahasiswa", "date": "14 Sep 2026", "videoId": "dQw4w9WgXcQ"}
+    ]
+  }
+]
