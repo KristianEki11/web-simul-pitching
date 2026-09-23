@@ -1,42 +1,62 @@
 // MMTC Media — Main JavaScript
 
 // --- Lenis Smooth Scroll ---
+let lenisInstance = null;
 function initLenis() {
-  const lenis = new Lenis({
+  if (typeof Lenis === 'undefined') return;
+  lenisInstance = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
   });
-  function raf(time) {
-    lenis.raf(time);
+  
+  if (typeof ScrollTrigger !== 'undefined') {
+    lenisInstance.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => {
+      lenisInstance.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
+  } else {
+    function raf(time) {
+      lenisInstance.raf(time);
+      requestAnimationFrame(raf);
+    }
     requestAnimationFrame(raf);
   }
-  requestAnimationFrame(raf);
 }
 
 // --- GSAP Animations ---
 function initGSAP() {
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
 
-  // Hero animations
-  gsap.from('.hero-badge', { opacity: 0, scale: 0.8, duration: 0.6, delay: 0.2, ease: 'back.out(1.7)' });
-  gsap.from('.hero-title', { opacity: 0, y: 40, duration: 0.8, delay: 0.4, ease: 'power3.out' });
-  gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 0.8, delay: 0.6, ease: 'power3.out' });
-  gsap.from('.hero-actions', { opacity: 0, y: 20, duration: 0.8, delay: 0.8, ease: 'power3.out' });
+  // Hero animations (only if hero exists)
+  if (document.querySelector('.hero-title')) {
+    const tl = gsap.timeline();
+    if (document.querySelector('.hero-badge')) {
+      tl.from('.hero-badge', { opacity: 0, scale: 0.8, duration: 0.5, ease: 'back.out(1.7)' });
+    }
+    tl.from('.hero-title', { opacity: 0, y: 30, duration: 0.7, ease: 'power3.out' }, '-=0.3');
+    if (document.querySelector('.hero-subtitle')) {
+      tl.from('.hero-subtitle', { opacity: 0, y: 20, duration: 0.6, ease: 'power3.out' }, '-=0.4');
+    }
+    if (document.querySelector('.hero-actions')) {
+      tl.from('.hero-actions', { opacity: 0, y: 20, duration: 0.6, ease: 'power3.out' }, '-=0.4');
+    }
+  }
 
   // Section scroll reveals
   gsap.utils.toArray('.reveal').forEach(section => {
     gsap.from(section, {
-      scrollTrigger: { trigger: section, start: 'top 85%', toggleActions: 'play none none none' },
-      opacity: 0, y: 40, duration: 0.8, ease: 'power3.out'
-    });
-  });
-
-  // Stagger cards
-  gsap.utils.toArray('.grid').forEach(grid => {
-    const cards = grid.children;
-    gsap.from(cards, {
-      scrollTrigger: { trigger: grid, start: 'top 85%' },
-      opacity: 0, y: 30, duration: 0.6, stagger: 0.1, ease: 'power3.out'
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 90%',
+        toggleActions: 'play none none none'
+      },
+      opacity: 0,
+      y: 30,
+      duration: 0.6,
+      ease: 'power3.out',
+      clearProps: 'all'
     });
   });
 

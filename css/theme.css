@@ -103,3 +103,10 @@ body.light-theme .theme-toggle:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
+
+body.light-theme .card-badge {
+  background-color: rgba(255, 255, 255, 0.88);
+  color: #111111;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+

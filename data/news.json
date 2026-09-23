@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "slug": "festival-kebudayaan-yogyakarta-2026",
@@ -19,8 +19,8 @@
     "excerpt": "MMTC mengadakan workshop intensif tentang strategi digital marketing dan pembuatan konten menggunakan tools AI terbaru.",
     "content": "<p>Departemen Multimedia dan Jaringan Komunikasi MMTC mengadakan workshop intensif selama dua hari tentang strategi digital marketing dan pembuatan konten menggunakan tools AI terbaru.</p><p>Workshop ini dihadiri oleh lebih dari 200 mahasiswa dan menghadirkan praktisi digital marketing dari perusahaan teknologi ternama. Peserta belajar tentang SEO, social media marketing, dan cara memanfaatkan AI untuk produksi konten yang efektif.</p>",
     "category": "Kampus",
-    "image": "https://images.unsplash.com/photo-1504711434969-e33886168d8c?w=800&q=80&fit=crop",
-    "thumbnail": "https://images.unsplash.com/photo-1504711434969-e33886168d8c?w=400&q=80&fit=crop",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&q=80&fit=crop",
     "author": "Rina Amelia",
     "date": "22 Sep 2026",
     "isTrending": true
@@ -97,8 +97,8 @@
     "excerpt": "MMTC Media merayakan ulang tahun ke-5 dengan rangkaian acara spesial dan peluncuran identitas visual baru.",
     "content": "<p>MMTC Media merayakan ulang tahun ke-5 dengan rangkaian acara spesial selama satu minggu. Perayaan ini mencakup peluncuran identitas visual baru, talkshow alumni, dan konser musik yang menampilkan band-band kampus.</p>",
     "category": "Event",
-    "image": "https://images.unsplash.com/photo-1492684223f8-e1f27d49dba3?w=800&q=80&fit=crop",
-    "thumbnail": "https://images.unsplash.com/photo-1492684223f8-e1f27d49dba3?w=400&q=80&fit=crop",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80&fit=crop",
     "author": "Tim Redaksi",
     "date": "15 Sep 2026",
     "isTrending": false
@@ -117,3 +117,4 @@
     "isTrending": false
   }
 ]
+

@@ -90,11 +90,15 @@ body::before {
 img,
 picture,
 video,
-canvas,
-svg {
+canvas {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 input,
@@ -334,9 +338,36 @@ p:last-child {
 }
 
 /* Lucide Icon */
-.icon {
+.icon,
+svg.icon,
+svg.lucide {
   width: 18px;
   height: 18px;
-  vertical-align: middle;
+  display: inline-block !important;
+  vertical-align: -2px;
   stroke: currentColor;
+  flex-shrink: 0;
+}
+
+/* Link More & Section Footer Helpers */
+.link-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.link-more:hover {
+  color: var(--text-secondary);
+  transform: translateX(4px);
+}
+
+.section-footer {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
 }
