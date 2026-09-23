@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Badge Exporter — MMTC Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: transparent;
+      padding: 40px;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .badge-wrapper {
+      display: inline-block;
+      padding: 10px;
+      background: transparent;
+    }
+    .badge-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.2;
+      display: inline-block;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+
+    /* Dark Variants */
+    .dark .badge-live {
+      background: rgba(255, 59, 59, 0.15);
+      color: #FF3B3B;
+      border: 1.5px solid rgba(255, 59, 59, 0.4);
+      box-shadow: 0 0 20px rgba(255, 59, 59, 0.2);
+    }
+    .dark .badge-trending {
+      background: rgba(255, 59, 59, 0.15);
+      color: #FF3B3B;
+      border: 1.5px solid rgba(255, 59, 59, 0.4);
+      box-shadow: 0 0 20px rgba(255, 59, 59, 0.2);
+    }
+    .dark .badge-category {
+      background: rgba(18, 18, 18, 0.9);
+      color: #FFFFFF;
+      border: 1.5px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(12px);
+    }
+
+    /* Light Variants */
+    .light .badge-live {
+      background: rgba(255, 59, 59, 0.1);
+      color: #E02424;
+      border: 1.5px solid rgba(224, 36, 36, 0.35);
+      box-shadow: 0 2px 10px rgba(224, 36, 36, 0.12);
+    }
+    .light .badge-trending {
+      background: rgba(255, 59, 59, 0.1);
+      color: #E02424;
+      border: 1.5px solid rgba(224, 36, 36, 0.35);
+      box-shadow: 0 2px 10px rgba(224, 36, 36, 0.12);
+    }
+    .light .badge-category {
+      background: rgba(255, 255, 255, 0.95);
+      color: #111111;
+      border: 1.5px solid rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .live-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #FF3B3B;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #FF3B3B;
+    }
+    .light .live-dot {
+      background-color: #E02424;
+      box-shadow: 0 0 10px rgba(224, 36, 36, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Badges -->
+  <div class="dark" id="dark-container">
+    <div class="badge-wrapper"><div id="dark-on-air-now" class="badge-item badge-live"><span class="live-dot"></span><span>ON AIR NOW</span></div></div>
+    <div class="badge-wrapper"><div id="dark-live" class="badge-item badge-live"><span class="live-dot"></span><span>LIVE</span></div></div>
+    <div class="badge-wrapper"><div id="dark-trending" class="badge-item badge-trending"><i data-lucide="trending-up" class="icon"></i><span>TRENDING</span></div></div>
+    <div class="badge-wrapper"><div id="dark-berita" class="badge-item badge-category"><i data-lucide="newspaper" class="icon"></i><span>BERITA</span></div></div>
+    <div class="badge-wrapper"><div id="dark-musik" class="badge-item badge-category"><i data-lucide="music" class="icon"></i><span>MUSIK</span></div></div>
+    <div class="badge-wrapper"><div id="dark-travel" class="badge-item badge-category"><i data-lucide="compass" class="icon"></i><span>TRAVEL</span></div></div>
+    <div class="badge-wrapper"><div id="dark-talkshow" class="badge-item badge-category"><i data-lucide="mic" class="icon"></i><span>TALKSHOW</span></div></div>
+    <div class="badge-wrapper"><div id="dark-podcast" class="badge-item badge-category"><i data-lucide="headphones" class="icon"></i><span>PODCAST</span></div></div>
+    <div class="badge-wrapper"><div id="dark-event" class="badge-item badge-category"><i data-lucide="calendar" class="icon"></i><span>SPECIAL EVENT</span></div></div>
+    <div class="badge-wrapper"><div id="dark-prestasi" class="badge-item badge-category"><i data-lucide="trophy" class="icon"></i><span>PRESTASI</span></div></div>
+    <div class="badge-wrapper"><div id="dark-kampus" class="badge-item badge-category"><i data-lucide="graduation-cap" class="icon"></i><span>KAMPUS</span></div></div>
+  </div>
+
+  <!-- Light Badges -->
+  <div class="light" id="light-container">
+    <div class="badge-wrapper"><div id="light-on-air-now" class="badge-item badge-live"><span class="live-dot"></span><span>ON AIR NOW</span></div></div>
+    <div class="badge-wrapper"><div id="light-live" class="badge-item badge-live"><span class="live-dot"></span><span>LIVE</span></div></div>
+    <div class="badge-wrapper"><div id="light-trending" class="badge-item badge-trending"><i data-lucide="trending-up" class="icon"></i><span>TRENDING</span></div></div>
+    <div class="badge-wrapper"><div id="light-berita" class="badge-item badge-category"><i data-lucide="newspaper" class="icon"></i><span>BERITA</span></div></div>
+    <div class="badge-wrapper"><div id="light-musik" class="badge-item badge-category"><i data-lucide="music" class="icon"></i><span>MUSIK</span></div></div>
+    <div class="badge-wrapper"><div id="light-travel" class="badge-item badge-category"><i data-lucide="compass" class="icon"></i><span>TRAVEL</span></div></div>
+    <div class="badge-wrapper"><div id="light-talkshow" class="badge-item badge-category"><i data-lucide="mic" class="icon"></i><span>TALKSHOW</span></div></div>
+    <div class="badge-wrapper"><div id="light-podcast" class="badge-item badge-category"><i data-lucide="headphones" class="icon"></i><span>PODCAST</span></div></div>
+    <div class="badge-wrapper"><div id="light-event" class="badge-item badge-category"><i data-lucide="calendar" class="icon"></i><span>SPECIAL EVENT</span></div></div>
+    <div class="badge-wrapper"><div id="light-prestasi" class="badge-item badge-category"><i data-lucide="trophy" class="icon"></i><span>PRESTASI</span></div></div>
+    <div class="badge-wrapper"><div id="light-kampus" class="badge-item badge-category"><i data-lucide="graduation-cap" class="icon"></i><span>KAMPUS</span></div></div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
